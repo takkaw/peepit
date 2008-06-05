@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs
+  title="peepit"
+  scrolling="true"
+  width="1024"
+  height="768"
+  author="takkaw"
+  author_email="takkaw+googlegadget@gmail.com" />
+  <Content type="html"><![CDATA[
+    <FORM NAME="URL:" ACTION="" METHOD="GET">URL: <BR>
+    <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+    <INPUT TYPE="button" NAME="button" Value="GET" onClick="get_html(this.form)">
+    </FORM>
+
+    <script type="text/javascript">
+
+    function get_html(form){
+      _IG_FetchContent(form.inputbox.value,function(res){
+        _gel('content_div').innerHTML = res
+      });
+    }
+
+    </script>
+    <div id="content_div"></div>
+
+]]></Content>
+</Module>
+
