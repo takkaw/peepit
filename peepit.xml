@@ -5,11 +5,13 @@
   scrolling="true"
   width="1024"
   height="768"
+  description="view page in google gadget."
+  thumbnail="http://f.hatena.ne.jp/images/fotolife/t/takkaw/20080606/20080607014605.png"
   author="takkaw"
   author_email="takkaw+googlegadget@gmail.com" />
   <Content type="html"><![CDATA[
     <FORM NAME="URL:" ACTION="" METHOD="GET">URL: <BR>
-    <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+    <INPUT TYPE="text" NAME="inputbox" VALUE="">
     <INPUT TYPE="button" NAME="button" Value="GET" onClick="get_html(this.form)">
     </FORM>
 
